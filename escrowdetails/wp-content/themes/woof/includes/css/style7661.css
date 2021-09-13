@@ -1,0 +1,775 @@
+/*
+Template Name: Woof!
+Author: Ingrid Kuhn
+Author URI: themeforest/user/ingridk
+Version: 1.0
+Last change:22th march 2018 
+
+	Table of Contents
+
+	#General and Typography
+	#Preloader
+	#Navigation
+	#Main Slider
+	#Video Header
+	#Section - Services
+	#Section - Adoption
+	#Section - About us	
+	#Section - Team
+	#Section - Gallery
+	#Section - Contact
+	#Blog pages
+    #Footer
+	#Miscellaneous
+	#Media Queries
+
+/*=========================== General and Typography ============================ */
+ body {
+     font-family: 'Open Sans', sans-serif;
+     color:#808080;
+}
+
+ p{
+     font-size: 16px;
+     line-height:1.6;
+     font-weight: 400;
+}
+ h1{
+     font-size: 3.8em;
+     line-height: 1.1em;
+     color:#675444;
+     font-family:'Quicksand', sans-serif;
+     margin-bottom: 20px;
+     font-weight:700;
+}
+
+ h3{
+     font-family:'Quicksand', sans-serif;
+     font-size:2.5em;
+     font-weight:700;
+     margin-bottom: 20px;
+     line-height: 1.2;
+     letter-spacing: -1px;
+}
+ h4{
+     font-family:'Quicksand', sans-serif;
+     color:#675444;
+     font-size:2.1em;
+     font-weight:500;
+     margin-bottom: 20px;
+     letter-spacing: -0.6px;
+}
+ h5{
+     color:#675444;
+     font-family:'Quicksand', sans-serif;
+     font-size:1.8em;
+     font-weight: 700;
+     margin-bottom: 20px;
+}
+ h6{
+     color:#675444;
+     font-family:'Quicksand', sans-serif;
+     font-size:1.4em;
+     font-weight: bold;
+     margin-bottom: 20px;
+}
+ .h7{
+     font-size:18px;
+     line-height:28px;
+     font-weight:700;
+}
+ .lead {
+     font-family:'Quicksand', sans-serif;
+     font-weight:700;
+     line-height:1.4em;
+}
+/* Links */
+ a {
+     transition: color .2s ease-in-out;
+}
+ a:hover, a:focus {
+     text-decoration: none;
+}
+ *:focus{
+     outline-style:none;
+     box-shadow:none;
+     border-color:transparent;
+}
+ .custom-link{
+     font-family:'Quicksand', sans-serif;
+     margin-top:20px;
+     background: #f3f3f3;
+     display: inline-block;
+     padding: 10px;
+     font-weight: 700;
+     font-size: 20px;
+}
+/*=========================== Preloader ============================ */
+ #preloader {
+     position: fixed;
+     top: 0;
+     background:#fff;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 99999;
+}
+ .  {
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     width: 10%;
+     left: 43%;
+     animation: rotate 2.0s infinite linear;
+}
+ .spinner > div {
+     border-radius: 100%;
+     display: inline-block;
+     animation: bouncedelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+     animation-fill-mode: both;
+}
+ .spinner .bounce1 {
+     animation-delay: -0.32s;
+}
+/* Preloader icon */
+ .spinner .bounce1:after {
+     content: "\f112";
+     position: absolute;
+     font-family: "flaticon";
+     font-size: 40px;
+     margin-top: -40px;
+     margin-left: -10px;
+}
+ @keyframes bouncedelay {
+     0%, 80%, 100% {
+         transform: scale(1.0);
+    }
+     40% {
+         transform: scale(1.5);
+    }
+}
+/*=========================== Navigation ============================ */
+
+
+ .nav-item{
+     border-radius:70px;
+     transition: all .2s ease-in-out;
+}
+
+s
+/*=========================== About us ============================ */
+/* testimonials */
+ .testimonial{
+     margin: 0 15px;
+}
+ .testimonial .content:before{
+     content: "";
+     font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+     display: inline-block;
+     position: absolute;
+     top: -30px;
+     left: -10px;
+     font-size: 36px;
+}
+ .testimonial .content{
+     padding: 30px;
+     border-radius:6px;
+     margin-bottom: 15px;
+     position: relative;
+}
+ .testimonial .content:after{
+     content: "";
+     border-top: 10px solid;
+     border-left: 10px solid transparent;
+     border-right: 9px solid transparent;
+     position: absolute;
+     bottom: -8px;
+     left: 16%;
+}
+ .testimonial .description{
+     margin-bottom: 10px;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 700;
+}
+ .testimonial-pic{
+     float:left;
+}
+ .testimonial-pic > img{
+     max-width: 120px;
+     border-radius: 50%;
+     border: 2px solid #e5e5e5;
+     margin-left: 20px;
+}
+ .testimonial .testimonial-review{
+     margin:3px 0 0 15px;
+     float: left;
+}
+ .testimonial .testimonial-title{
+     margin-bottom:0px;
+}
+ .testimonial .testimonial-review span{
+     font-size:22px;
+}
+
+/* buttons */
+ .btn {
+     transition: background-color .2s ease-in-out;
+     color: #fff!important;
+     border:0px;
+     font-size: 1rem;
+     padding: 10px 20px;
+     outline: none;
+     letter-spacing: 0.2px;
+     font-family: 'Quicksand', sans-serif;
+     border-radius: 355px 45px 225px 75px/15px 225px 15px 255px;
+     text-transform: uppercase;
+     margin-top: 15px;
+     white-space: normal;
+     font-weight: bold;
+}
+ .btn-primary, .btn-secondary {
+     transition: background .2s ease-in-out;
+}
+ .btn-lg {
+     padding: 1.5rem 2.4rem!important;
+     font-size: 1.25rem!important;
+     line-height: 1.5;
+}
+ .btn-sm {
+     padding: 0.6rem 0.6rem!important;
+     font-size: 0.9rem!important;
+}
+ .btn-light {
+     color: #212529!important;
+}
+ .btn-group-vertical>.btn, .btn-group>.btn{
+     margin:0px;
+}
+ .btn-primary:hover, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active{
+     outline:none;
+     box-shadow:none!important;
+}
+ button:focus {
+     outline: 0px;
+}
+/* background decorations */
+ .dog-bg1,.dog-bg2,.dog-bg3,.cat-bg1,.cat-bg2,.cat-bg3, .paws-house-bg1 {
+     position: relative;
+     z-index: 1;
+}
+
+ .section-heading {
+     text-align:center;
+     margin-bottom:100px;
+}
+ .section-heading:before {
+     content: "\f126";
+     z-index: 0;
+     font-family: "flaticon";
+     font-size: 50px;
+     bottom: -20px;
+     z-index: 0;
+     text-shadow: 0px 4px 17px rgba(255, 255, 255, 0.6);
+}
+/* custom ul */
+ ul.custom {
+     list-style: none;
+}
+ ul.custom li {
+     padding: 5px 0px;
+     font-size: 16px;
+     line-height: 26px;
+}
+ ul.custom li:before {
+     font-family: "Flaticon";
+     content: "\f126";
+     padding-right: 7px;
+}
+/* white border if bg same color as form border */
+ .bg-primary .form-control{
+     border-color:#fff;
+}
+/*cards */
+ .card{
+     border:0px;
+     border-radius: 155px 45px 225px 75px/15px 125px 15px 155px;
+     padding:40px;
+}
+/* block padding */
+ .block-padding{
+     padding-top:70px;
+     padding-bottom:70px;
+}
+ .bottom-block-padding{
+     padding-top: 70px;
+}
+/* overlay background */
+ .overlay{
+     box-shadow:inset 0 0 0 1000px rgba(41, 41, 41, 0.42);
+}
+/* list group */
+ .list-group{
+     font-weight:700;
+     font-size:18px;
+}
+ .list-group-item{
+     font-family:'Quicksand', sans-serif;
+     transition: all 0.2s ease-in-out;
+     margin-bottom: 4px;
+     background-color: #fff;
+     border: 0px;
+     border-radius: 5px!important;
+}
+ .list-group-item-action:focus, .list-group-item-action:hover{
+     color:#fff;
+}
+/* Jumbotron */
+ .jumbotron{
+     background-size: cover;
+     margin-bottom: 0px;
+     position: relative;
+     background-position: center center;
+     text-align: center;
+     padding: 10px;
+}
+ .jumbo-heading .section-heading {
+     margin-bottom: 0px;
+}
+ .jumbo-heading .section-heading h1 {
+     color:#fff;
+}
+/* Owl-carousel */
+ .owl-prev, .owl-next {
+     position: absolute;
+     top: 50%;
+     border-radius: 50%;
+     text-align: center;
+}
+ .owl-nav {
+     margin: 0 auto;
+     top: -20px;
+     left: 50%;
+}
+ .owl-prev {
+     left: -15px;
+}
+ .owl-next {
+     right: -15px;
+}
+ .owl-prev i, .owl-next i {
+     transition: all .3s ease-in-out;
+     border-radius:50%;
+     color:#fff!important;
+     font-size: 20px;
+     height: 30px;
+     width: 30px;
+     line-height: 30px;
+}
+ .owl-carousel.owl-loaded {
+     display: block;
+     clear: both;
+    /* Important fix */
+}
+ .owl-dots {
+     text-align: center;
+     margin-top: 10px;
+}
+.owl-carousel .owl-stage-outer{
+    margin-top: -7px;	
+}
+ .owl-theme .owl-dots .owl-dot {
+     display: inline-block;
+}
+ .owl-theme .owl-dots .owl-dot span {
+     border: 2px solid #cecece;
+     position: relative;
+     display: inline-block;
+     vertical-align: top;
+     width: 1rem;
+     height: 1rem;
+     margin: 0 0.3rem;
+     border-radius: 50%;
+     cursor: pointer;
+     color: #333;
+     transition: all 0.3s ease-in-out;
+}
+ .owl-carousel .owl-stage {
+     margin-top: 20px;
+}
+/* owl carousel with navigation on top */
+ .top-centered-nav .owl-nav {
+     position: absolute;
+}
+ .top-centered-nav .owl-prev, .top-centered-nav .owl-next {
+     top: 0%;
+}
+ .top-centered-nav .owl-prev {
+     left: -40px;
+}
+ .top-centered-nav .owl-next {
+     right: -40px;
+}
+/* fade-effect owl carousel */
+ .fade-effect.owl-carousel .owl-item {
+     perspective: 1000px;
+     opacity: 0.7;
+     transform: scale(0.8);
+     transition: all 1s ease-in-out;
+}
+ .fade-effect.owl-carousel .owl-item.active {
+     opacity: 1;
+     transform: scale(1);
+}
+/* Mailchimp message */
+ #mce-error-response, #mce-success-response {
+     display: none;
+     margin-top:20px;
+}
+/* Page margin*/
+ .page{
+     background:#fff;
+     padding-top:120px;
+     padding-bottom:120px;
+}
+/* opacity on hover */
+ .hover-opacity{
+     transition: all 0.4s ease-in-out;
+}
+ .hover-opacity:hover{
+     opacity:0.8;
+     border-radius: 20px;
+}
+/* bg-secondary */
+ .bg-secondary a:hover{
+     color:#f8f8f8;
+}
+/* alerts */
+ .alert-primary,.alert-secondary{
+     color:#fff;
+}
+/* nav pills */
+ .nav-pills .nav-link {
+     font-size: 22px;
+     color:#fff;
+     margin: 5px 10px;
+     transition: all 0.2s ease-in-out;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 700;
+}
+ .nav-link.disabled {
+     color: #6c757d!important;
+}
+/* pills /badges */
+ .badge-pill {
+     padding: 10px;
+     margin:3px;
+}
+ .badge-default{
+     color:#fff;
+}
+/* breadcrumbs */
+ .breadcrumb {
+     color:#fff;
+     font-family:'Quicksand', sans-serif;
+     font-weight:700;
+     background: transparent;
+     padding: 20px;
+     text-transform: uppercase;
+     font-size: 13px;
+     display: inline-flex;
+     padding-bottom: 0px;
+}
+ .breadcrumb a {
+     color:#fff;
+}
+ .breadcrumb-item.active {
+     color: #cecece;
+}
+ .breadcrumb-item+.breadcrumb-item::before {
+     color: #fff;
+     font-size:10px;
+     font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+     content: "\f054";
+}
+/* pagination */
+ .page-link:hover,.page-link:focus,.page-link.active{
+     color:#fff;
+     border: 1px solid #fff;
+     outline:0;
+}
+ .page-link{
+     transition: all 0.2s ease-in-out;
+     font-family: 'Quicksand', sans-serif;
+     color:#fff;
+     font-weight:700;
+     border: 1px solid #fff;
+}
+/*=========================== Media queries ============================ */
+/* Small devices (landscape phones, 544px) */
+ @media (max-width: 544px) {
+    /* slider */
+     #slider{
+         padding-top:58px!important;
+    }
+     .header-wrapper .header-text {
+         margin-top: 20%;
+         width:50%;
+    }
+     .header-text h1 {
+         margin-bottom: 0px!important;
+    }
+     .header-text:before{
+         display:none!important;
+    }
+     .ls-bottom-nav-wrapper {
+         bottom: -10px;
+    }
+    /*video header */
+     .video-text h1 {
+         font-size:1.4em;
+         width: 100%;
+    }
+    /* others */
+     .jumbotron h1 {
+         font-size: 2.1em!important;
+    }
+     .navbar-brand span {
+         font-size:30px;
+    }
+     .navbar-brand i {
+         font-size:40px;
+    }
+     .navbar-collapse.show, .navbar-collapse {
+         max-height: 300px !important;
+    }
+     .jumbotron {
+         margin-top:58px!important;
+    }
+     .top-bar {
+         display:none!important;
+    }
+     .input-group .form-control, .input-group-btn {
+         display: inline-table;
+         width: 100%;
+         margin-top: 10px;
+    }
+     .input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child), .input-group-btn .btn{
+         border-radius: 355px 45px 225px 75px/15px 225px 15px 255px;
+    }
+     .card {
+         padding: 20px;
+    }
+     .testimonial-pic , .testimonial .testimonial-review {
+         float: none;
+         text-align:center;
+    }
+     .testimonial-pic > img, .testimonial .testimonial-review {
+         margin: 0 auto;
+    }
+     .btn-lg {
+         padding: 20px!important;
+    }
+     #video-header{
+         margin-top:50px;
+    }
+     .video-text .navbar-brand span, .video-text .navbar-brand i{
+         font-size:40px!important;
+         line-height: 30px!important;
+    }
+     .back-to-top {
+         right: 12px;
+    }
+     .card.blog-card {
+         padding: 30px 0px;
+    }
+     .card-header {
+         padding: .75rem 0rem;
+    }
+     .blog-sidebar .card {
+         padding: 0px;
+    }
+     .text-xs-center {
+         text-align: center;
+    }
+}
+/* Medium devices (tablets, 768px) The navbar toggle appears at this breakpoint */
+ @media (min-width: 767px) {
+    /* jumbotron 
+     .jumbotron{
+         margin-top: 180px;
+    }*/
+}
+ @media (max-width: 768px) {
+     /* section */
+     section {
+         padding-top: 40px;
+         padding-bottom: 40px;
+     }
+
+     .section-heading {
+         margin-bottom: 40px;
+     }
+
+     .section-heading:before {
+         font-size: 40px;
+     }
+
+     /* owl carousel navigation on top */
+     .owl-nav {
+         margin: 0 auto;
+         top: 0px;
+         left: 50%;
+         position: absolute;
+     }
+
+     .owl-prev, .owl-next {
+         top: 0%;
+     }
+
+     .owl-prev {
+         left: -40px;
+     }
+
+     .owl-next {
+         right: -40px;
+     }
+
+     .owl-carousel .owl-stage {
+         margin-top: 50px;
+     }
+
+     /* typography */
+     h1 {
+         font-size: 2.4em;
+     }
+
+     h2 {
+         font-size: 2.0em;
+     }
+
+     h3 {
+         font-size: 1.7em;
+     }
+
+     h4 {
+         font-size: 1.5em;
+     }
+
+     .h7 {
+         font-size: 16px;
+         line-height: 27px;
+     }
+
+     .header-p {
+         font-size: 18px;
+         line-height: 23px;
+         margin-bottom: 10px;
+     }
+
+     .header-text h1 {
+         margin-bottom: 20px;
+         font-size: 5em;
+     }
+
+     /* others */
+     .page {
+         padding-top: 50px;
+         padding-bottom: 50px;
+     }
+
+     /* Extra large devices (large desktops, 1920px or more) */
+     @media (min-width: 1920px) {
+         /*background decorations */
+         .dog-bg1:before, .dog-bg2:before, .cat-bg2:before, .cat-bg3:before, .paws-house-bg1:before {
+             left: 18%
+         }
+
+         .dog-bg3:before, .cat-bg1:before {
+             right: 18%
+         }
+     }
+ }
+#invoice-POS{
+    box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+    padding:2mm;
+    margin: 0 auto;
+    width: 44mm;
+    background: #FFF;
+
+
+
+h1{
+    font-size: 1.5em;
+    color: #222;
+}
+h2{font-size: .9em;}
+h3{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 2em;
+}
+p{
+    font-size: .7em;
+    color: #666;
+    line-height: 1.2em;
+}
+
+#top, #mid,#bot{ /* Targets all id with 'col-' */
+    border-bottom: 1px solid #EEE;
+}
+
+#top{min-height: 100px;}
+#mid{min-height: 80px;}
+#bot{ min-height: 50px;}
+
+#top .logo{
+//float: left;
+    height: 60px;
+    width: 60px;
+    background: url(http://michaeltruong.ca/images/logo1.png) no-repeat;
+    background-size: 60px 60px;
+}
+.clientlogo{
+    float: left;
+    height: 60px;
+    width: 60px;
+    background: url(http://michaeltruong.ca/images/client.jpg) no-repeat;
+    background-size: 60px 60px;
+    border-radius: 50px;
+}
+.info{
+    display: block;
+//float:left;
+    margin-left: 0;
+}
+.title{
+    float: right;
+}
+.title p{text-align: right;}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td{
+//padding: 5px 0 5px 15px;
+//border: 1px solid #EEE
+}
+.tabletitle{
+//padding: 5px;
+    font-size: .5em;
+    background: #EEE;
+}
+.service{border-bottom: 1px solid #EEE;}
+.item{width: 24mm;}
+.itemtext{font-size: .5em;}
+
+#legalcopy{
+    margin-top: 5mm;
+}
+
+
+
+}
