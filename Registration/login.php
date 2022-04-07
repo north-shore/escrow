@@ -14,6 +14,19 @@ if (! empty($_POST["login-btn"])) {
 	<link href="assets/css/phppot-style.css" type="text/css"rel="stylesheet" />
 	<link href="assets/css/user-registration.css" type="text/css"rel="stylesheet" />
 	<meta charset="utf-8">
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/624f4ca7c72df874911de794/1g02s6rv6';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>login</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
