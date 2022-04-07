@@ -13,7 +13,7 @@
 	fullHeight();
 
 	$('#sidebarCollapse').on('click', function () {
-      $('#sidebar').toggleClass('close');
+      $('#sidebar').toggleClass('active');
   });
 
 })(jQuery);
